@@ -21,6 +21,22 @@ fun main() {
     countryCapitals.remove("Germany")
     println("Final Map: $countryCapitals")
 
+    //Part 4
+    val carBrands = arrayListOf("BMW", "Toyota", "Honda");
+    carBrands.add("Ford")
+    carBrands.add("Mercedes")
+    carBrands.remove("Mercedes")
+    println(carBrands)
+
+    //Part 5
+    val numbersList = listOf(10, 5, 20, 15, 25, 30)
+    println("Numbers greater than 15: ${numbersList.filter{it > 15}}")
+    println("Numbers greater than 15: ${numbersList.sorted()}")
+
+    //Part 6
+    val numbersFloatingList = listOf(2.5, 7.1, 3.8, 9.2, 5.6);
+    println("Largest number: ${numbersFloatingList.maxOrNull()}")
+    println("Smallest number: ${numbersFloatingList.minOrNull()}")
 
 }
 
